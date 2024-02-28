@@ -30,6 +30,7 @@ public class UserReportUtil {
             return null;
         }
     }
+
     public static ByteArrayInputStream generatePdfReport(List<User> listUsers) throws DocumentException, com.itextpdf.text.DocumentException {
         Document document = new Document(PageSize.A4.rotate());
         ByteArrayOutputStream out = new ByteArrayOutputStream();

@@ -10,7 +10,8 @@ import java.util.stream.Collectors;
 
 @Service
 public class UserService {
-    @Autowired private UserRepository repo;
+    @Autowired
+    private UserRepository repo;
 
     public List<User> listAll() {
         return (List<User>) repo.findAll();
