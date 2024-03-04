@@ -15,6 +15,11 @@
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>
+		<!-- SonarQube Properties -->
+		<sonar.host.url>http://127.0.0.1:9000</sonar.host.url>
+		<sonar.login>sqp_886db1b042507d9b0f83b556d14b7e29eae104f3</sonar.login>
+		<sonar.projectKey>userManagement</sonar.projectKey>
+		<sonar.sources>src/main/java</sonar.sources>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -91,7 +96,14 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<plugin>
+				<groupId>org.sonarsource.scanner.maven</groupId>
+				<artifactId>sonar-maven-plugin</artifactId>
+				<version>3.7.0.1746</version>
+			</plugin>
 		</plugins>
 	</build>
+
+
 
 </project>
