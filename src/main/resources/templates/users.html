@@ -3,16 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>Manage Users</title>
-    <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"  />
+    <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"/>
 </head>
 <body>
 <div class="container-fluid text-center">
     <div style="margin-top: 15px;"><h2>Manage Users</h2></div>
     <div class="m-2">
-        <a class="h6" style="display: inline-block; padding: 5px 10px; background-color: #007bff; color: #fff; text-decoration: none; border-radius: 5px; border: none; cursor: pointer; position: absolute; top: 50px; left: 15px;" th:href="@{/users/new}">Add New User</a>
-        <a class="h6" style="display: inline-block; padding: 5px 10px; background-color: #007bff; color: #fff; text-decoration: none; border-radius: 5px; border: none; cursor: pointer; position: absolute; top: 50px; right: 270px;" th:href="@{/users/sortByName}">Sort By Name</a>
-        <a class="h6" style="display: inline-block; padding: 5px 10px; background-color: #007bff; color: #fff; text-decoration: none; border-radius: 5px; border: none; cursor: pointer; position: absolute; top: 50px; right: 150px;" th:href="@{/users/reportCSV}">Report CSV</a>
-        <a class="h6" style="display: inline-block; padding: 5px 10px; background-color: #007bff; color: #fff; text-decoration: none; border-radius: 5px; border: none; cursor: pointer; position: absolute; top: 50px; right: 40px;" th:href="@{/users/reportPDF}">Report PDF</a>
+        <a class="h6"
+           style="display: inline-block; padding: 5px 10px; background-color: #007bff; color: #fff; text-decoration: none; border-radius: 5px; border: none; cursor: pointer; position: absolute; top: 50px; left: 15px;"
+           th:href="@{/users/new}">Add New User</a>
+        <a class="h6"
+           style="display: inline-block; padding: 5px 10px; background-color: #007bff; color: #fff; text-decoration: none; border-radius: 5px; border: none; cursor: pointer; position: absolute; top: 50px; right: 270px;"
+           th:href="@{/users/sortByName}">Sort By Name</a>
+        <a class="h6"
+           style="display: inline-block; padding: 5px 10px; background-color: #007bff; color: #fff; text-decoration: none; border-radius: 5px; border: none; cursor: pointer; position: absolute; top: 50px; right: 150px;"
+           th:href="@{/users/reportCSV}">Report CSV</a>
+        <a class="h6"
+           style="display: inline-block; padding: 5px 10px; background-color: #007bff; color: #fff; text-decoration: none; border-radius: 5px; border: none; cursor: pointer; position: absolute; top: 50px; right: 40px;"
+           th:href="@{/users/reportPDF}">Report PDF</a>
     </div>
 
     <div th:if="${message}" class="alert alert-success text-center" style="margin-top: 50px;">
